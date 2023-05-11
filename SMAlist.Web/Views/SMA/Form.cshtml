@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewData["Title"] = "Form";
+}
+
+<form class="row g-3 bg-light text-center align-items-center margin" asp-controller="SMA" asp-action="Form" method="Post">
+    <div class="alert alert-primary text-center" role="alert">
+       <b> @TempData["status"] </b>
+    </div>
+        <h1 class="h1 text-center">Form</h1>
+    <div class="col-md-6 bg-light">
+        <b><label class="form-label">İSİM</label></b>
+        <input type="text" class="form-control" placeholder="İSİM" name="Name" required>
+    </div>
+    <div class="col-md-6">
+        <b> <label class="form-label">SOYİSİM</label></b>
+        <input type="text" class="form-control" placeholder="SOYİSİM" name="Surname" required>
+    </div>
+    
+    <div class="col-md-6">
+        <b><label class="form-label">EMAIL</label></b>
+        <input type="email" class="form-control" placeholder="EMAIL" name="Email">
+    </div>
+    <div class="col-md-6">
+        <b><label class="form-label">INSTAGRAM</label></b>
+        <input type="text" class="form-control" placeholder="INSTAGRAM" name="Instagram">
+    </div>
+            <div class="col-md-6">
+                <b><label class="form-label">SORGU-NO</label></b>
+                <input type="text" class="form-control" placeholder="SORGU-NO" name="SorguNo">
+            </div>
+            <div class="col-md-6">
+                <b><label class="form-label">ŞEHİR</label></b>
+                <input type="text" class="form-control" placeholder="ŞEHİR" name="Sehir" required>
+            </div>
+    <div class="mb-3">
+        <b><label for="exampleFormControlTextarea1" class="form-label">Mesajınız</label></b>
+        <textarea class="form-control" name="Mesaj" rows="3" required placeholder="Mesajınız"></textarea>
+    </div>
+            <div class="marginbottom">
+    <input type="submit" class="btn btn-primary" value="Gönder"/>
+    </div>
+</form>
+    
+

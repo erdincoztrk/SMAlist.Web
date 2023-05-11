@@ -1,0 +1,42 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-image:url("../images/logo/background2.jpg");
+}
+
+.divselect:hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 10px blue;
+    color: green;
+}
+.divv{
+    margin-bottom:50px;
+}
+.margin{
+    margin-top:10%;
+}
+.marginbottom{
+    margin-bottom:20px;
+}
+.marginbottom2{
+    margin-bottom:50px;
+}
+.smanedir{
+    font-family:'Times New Roman', Times, serif;
+    font-size:larger;
+}

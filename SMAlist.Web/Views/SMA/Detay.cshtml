@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewData["Title"] = "SMA İçin Yardım";
+}
+<style>
+   body{
+       font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       font-size:large;
+   }
+   .text{
+       margin-bottom:15px;
+   }
+</style>
+
+@model Person
+
+<div class="card text-center">
+    <div class="card-body">
+        
+
+<!-- RESİM BAŞLANGIÇ YERİ--> 
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="~/images/@Model.Fotograf1" class="d-block w-100" alt="..." width = "400" height = "600">
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/@Model.Fotograf2" class="d-block w-100" alt="..." width = "400" height="600">
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/@Model.Fotograf3" class="d-block w-100" alt="..."width = "400" height="600">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!--BİLGİLER BAŞLANGIÇ YERİ-->
+        <h3 class="text">@Model.Name</h3>
+        <span>IBAN: @Model.Iban</span><br />
+        <span>IBAN ALICI: @Model.IbanAlici</span><br />
+        <span>HASTALIK: @Model.Hastalik</span><br />
+        <span>SORGU NO: @Model.SorguNo</span><br />
+        <span><img src="~/images/logo/instagramlogo.png" width="25" height="25" /><a href="https://www.instagram.com/@Model.Instagram" target="_blank"> @Model.Instagram</a></span>
+        <hr />
+        <span class="text-muted">YARDIM İÇİN İZİN BİTİŞ TARİHİ</span><br />
+        <span class="text-muted">@Model.Yardim_Bitis</span>
+    </div>
+</div>
